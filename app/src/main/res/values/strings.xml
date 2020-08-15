@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Mobile Candidate Challenge</string>
+    <string name="searchTextHint">Buscar en Mercado Libre</string>
+    <string name="searchButton">Buscar</string>
 </resources>
