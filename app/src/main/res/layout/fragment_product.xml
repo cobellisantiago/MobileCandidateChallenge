@@ -18,20 +18,37 @@
             android:textAppearance="?attr/textAppearanceListItem"
             android:textSize="20sp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintStart_toEndOf="@+id/item_picture"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@tools:sample/cities" />
 
         <TextView
             android:id="@+id/item_price"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
             android:fontFamily="@font/roboto_medium"
             android:textAppearance="?attr/textAppearanceListItem"
             android:textSize="24sp"
             android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/item_picture"
+            app:layout_constraintTop_toBottomOf="@+id/item_title"
+            tools:text="@tools:sample/lorem" />
+
+        <ImageView
+            android:id="@+id/item_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/product_image_content_description"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/item_title" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -3,6 +3,7 @@ package com.santiagocobelli.mobilecandidatechallenge.domain;
 import com.google.gson.annotations.SerializedName;
 
 import java.io.Serializable;
+import java.net.URL;
 
 public class Product implements Serializable {
 
