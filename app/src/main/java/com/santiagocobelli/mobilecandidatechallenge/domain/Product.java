@@ -17,16 +17,22 @@ public class Product implements Serializable {
     private Double price;
     @SerializedName("thumbnail")
     private String imageUrl;
+    @SerializedName("condition")
+    private String ConditionNew;
+    @SerializedName("sold_quantity")
+    private Integer soldQuantity;
 
     public Product() {
     }
 
-    public Product(String id, String title, String categoryId, Double price, String imageUrl) {
+    public Product(String id, String title, String categoryId, Double price, String imageUrl, String conditionNew, Integer soldQuantity) {
         this.id = id;
         this.title = title;
         this.categoryId = categoryId;
         this.price = price;
         this.imageUrl = imageUrl;
+        ConditionNew = conditionNew;
+        this.soldQuantity = soldQuantity;
     }
 
     public String getId() {
@@ -42,6 +48,12 @@ public class Product implements Serializable {
         return price;
     }
     public String getImageUrl(){ return imageUrl; }
+    public String getConditionNew() {
+        return ConditionNew;
+    }
+    public Integer getSoldQuantity() {
+        return soldQuantity;
+    }
 
     public void setId(String id) {
         this.id = id;
@@ -58,6 +70,10 @@ public class Product implements Serializable {
     public void setImageUrl(String imageUrl) {
         this.imageUrl = imageUrl;
     }
-
-
+    public void setConditionNew(String conditionNew) {
+        ConditionNew = conditionNew;
+    }
+    public void setSoldQuantity(Integer soldQuantity) {
+        this.soldQuantity = soldQuantity;
+    }
 }

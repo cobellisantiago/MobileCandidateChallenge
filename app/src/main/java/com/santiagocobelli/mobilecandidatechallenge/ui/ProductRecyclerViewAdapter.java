@@ -3,6 +3,7 @@ package com.santiagocobelli.mobilecandidatechallenge.ui;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;

@@ -71,7 +71,6 @@ public class SearchProductsActivity extends AppCompatActivity implements Product
 
     @Override
     public void OnProductClick(int position) {
-        Log.d("APP_2", "OnProductClick: " + position );
         Intent intent = new Intent(this, ProductDetialsActivity.class);
         Product productSelected = (Product) listaDataSet.get(position);
         intent.putExtra("productSelected", productSelected);

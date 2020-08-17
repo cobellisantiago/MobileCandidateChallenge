@@ -15,22 +15,12 @@ import android.view.ViewGroup;
 import com.santiagocobelli.mobilecandidatechallenge.R;
 import com.santiagocobelli.mobilecandidatechallenge.repositories.ProductRepository;
 
-/**
- * A fragment representing a list of Items.
- */
 public class ProductFragment extends Fragment {
 
-    // TODO: Customize parameter argument names
     private static final String ARG_COLUMN_COUNT = "column-count";
-    // TODO: Customize parameters
     private int mColumnCount = 1;
 
-    /**
-     * Mandatory empty constructor for the fragment manager to instantiate the
-     * fragment (e.g. upon screen orientation changes).
-     */
-    public ProductFragment() {
-    }
+    public ProductFragment() { }
 
     // TODO: Customize parameter initialization
     @SuppressWarnings("unused")

@@ -41,11 +41,10 @@ public class ProductRepository {
 
         public static ProductRepository getInstance(){
 
-        // Creamos un interceptor y le indicamos el log level a usar
         HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
         logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
-        // Asociamos el interceptor a las peticiones
+
         OkHttpClient.Builder httpClient = new OkHttpClient.Builder();
         httpClient.addInterceptor(logging);
 
@@ -62,7 +61,6 @@ public class ProductRepository {
 
         private void configurarRetrofit(OkHttpClient.Builder httpClient){
         this.rf = new Retrofit.Builder().baseUrl(SERVER).addConverterFactory(GsonConverterFactory.create()).client(httpClient.build()).build();
-        Log.d("APP_2", "INSTANCIA CREADA");
         this.productRest = this.rf.create(ProductRest.class);
     }
 
